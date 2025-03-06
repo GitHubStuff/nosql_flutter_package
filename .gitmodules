@@ -1,0 +1,3 @@
+[submodule "example"]
+    path = example
+    url = https://github.com/GitHubStuff/template_flutter_app

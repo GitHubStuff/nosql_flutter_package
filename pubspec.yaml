@@ -1,0 +1,32 @@
+name: template_flutter_package
+description: "A new Flutter package project."
+version: 0.0.1
+homepage: https://github.com/GitHubStuff?tab=repositories&q=&type=&language=&sort=
+
+environment:
+  sdk: ^3.7.0
+  flutter: ">=3.29.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  melos: ^6.3.2
+  very_good_analysis: ^7.0.0
+
+# Element of flutter_gen https://pub.dev/packages/flutter_gen/install
+# The Flutter code generator for your assets, fonts, colors, … — Get rid of all String-based APIs.
+# From terminal
+#   % dart pub global activate flutter_gen
+#   % fluttergen
+flutter_gen:
+  line_length: 132
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+flutter:
+  uses-material-design: true
