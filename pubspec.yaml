@@ -2,6 +2,7 @@ name: nosql_flutter_package
 description: "A NoSQL package for Flutter to abstract the underlying NoSQL database."
 version: 0.0.1
 homepage: https://github.com/GitHubStuff?tab=repositories&q=&type=&language=&sort=
+publish_to: "none"
 
 environment:
   sdk: ^3.7.2
