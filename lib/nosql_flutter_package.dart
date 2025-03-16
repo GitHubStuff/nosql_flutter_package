@@ -1,2 +1,1 @@
-export 'src/nosql_hive.dart';
-export 'src/nosql_hive_box.dart';
+export 'src/nosql_flutter_package.dart';

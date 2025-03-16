@@ -1,6 +1,7 @@
 import 'dart:async' show FutureOr;
 import 'package:hive_ce/hive.dart' show Box;
-import 'package:nosql_flutter_package/src/nosql_abstract.dart' show NoSqlBox;
+import 'package:nosql_flutter_package/src/nosql_abstract/nosql_box.dart'
+    show NoSqlBox;
 
 class NoSqlHiveBox<T> extends NoSqlBox<T> {
   NoSqlHiveBox(this._box);
@@ -11,7 +12,7 @@ class NoSqlHiveBox<T> extends NoSqlBox<T> {
   FutureOr<T?> get(dynamic key, {T? defaultValue}) {
     try {
       return _box.get(key, defaultValue: defaultValue);
-    } on Exception catch (_) {
+    } on Object catch (_) {
       return null;
     }
   }
@@ -25,4 +26,7 @@ class NoSqlHiveBox<T> extends NoSqlBox<T> {
       return false;
     }
   }
+
+  @override
+  void close() => _box.close();
 }
